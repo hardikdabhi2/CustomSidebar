@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H70-i0-m1d">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="0.6973191352739726" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jxq-78-emK">
+                    <rect key="frame" x="0.0" y="0.0" width="315" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GfY-L8-xOr">
+                            <rect key="frame" x="0.0" y="0.0" width="315" height="175"/>
+                            <color key="backgroundColor" red="0.98431372549999996" green="0.50980392159999999" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="175" id="7eW-sG-3Vs"/>
+                            </constraints>
+                        </view>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cQp-TY-8n6">
+                            <rect key="frame" x="0.0" y="175" width="315" height="492"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="urf-58-geP"/>
+                                <outlet property="delegate" destination="-1" id="a7C-Kc-j1M"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="GfY-L8-xOr" secondAttribute="trailing" id="0ZU-D6-6Cs"/>
+                        <constraint firstItem="GfY-L8-xOr" firstAttribute="leading" secondItem="jxq-78-emK" secondAttribute="leading" id="6Iv-zA-xAF"/>
+                        <constraint firstAttribute="trailing" secondItem="cQp-TY-8n6" secondAttribute="trailing" id="NeO-E8-pve"/>
+                        <constraint firstItem="cQp-TY-8n6" firstAttribute="top" secondItem="GfY-L8-xOr" secondAttribute="bottom" id="f5a-vt-Oqr"/>
+                        <constraint firstItem="GfY-L8-xOr" firstAttribute="top" secondItem="jxq-78-emK" secondAttribute="top" id="iOe-bl-PdI"/>
+                        <constraint firstAttribute="bottom" secondItem="cQp-TY-8n6" secondAttribute="bottom" id="oNw-Pp-ibb"/>
+                        <constraint firstItem="cQp-TY-8n6" firstAttribute="leading" secondItem="jxq-78-emK" secondAttribute="leading" id="yGD-F9-7hL"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="H70-i0-m1d" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="EAE-hY-sTf"/>
+                <constraint firstItem="jxq-78-emK" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="UUn-nT-HLU"/>
+                <constraint firstItem="H70-i0-m1d" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="ZcF-Dd-mbW"/>
+                <constraint firstItem="H70-i0-m1d" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="axY-qO-0Xq"/>
+                <constraint firstItem="jxq-78-emK" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="e52-Jq-qiR"/>
+                <constraint firstItem="jxq-78-emK" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="315:667" id="gLK-aU-EeV"/>
+                <constraint firstItem="H70-i0-m1d" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="vuS-A0-T7G"/>
+                <constraint firstItem="jxq-78-emK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="xDj-Hs-tHQ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="EYR-Oi-z4K" appends="YES" id="TDz-Wk-cJi"/>
+            </connections>
+            <point key="canvasLocation" x="40.799999999999997" y="46.326836581709152"/>
+        </view>
+        <tapGestureRecognizer id="EYR-Oi-z4K">
+            <connections>
+                <action selector="actionMethodTapGesture" destination="-2" id="ksm-lJ-ZDp"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

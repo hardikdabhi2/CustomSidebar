@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="525-HY-0R1">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Settings View Controller-->
+        <scene sceneID="WYv-Ri-CWu">
+            <objects>
+                <viewController storyboardIdentifier="settingVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HNS-ks-LqE" customClass="SettingsViewController" customModule="CustomSidebar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1W0-rV-fLD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to setting vc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3p-2M-EWE">
+                                <rect key="frame" x="102.5" y="333" width="170" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MaA-39-xOi">
+                                <rect key="frame" x="15" y="20" width="30" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="Xxi-ST-5Y9"/>
+                                    <constraint firstAttribute="height" constant="30" id="jsC-eM-wW4"/>
+                                </constraints>
+                                <state key="normal" image="menu">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="BtnAction:" destination="HNS-ks-LqE" eventType="touchUpInside" id="Oog-Dm-bXn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EYR-ad-2EG">
+                                <rect key="frame" x="168.5" y="362" width="38" height="30"/>
+                                <state key="normal" title="Move"/>
+                                <connections>
+                                    <action selector="btnActionTest:" destination="HNS-ks-LqE" eventType="touchUpInside" id="YTS-HP-Ugg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EYR-ad-2EG" firstAttribute="top" secondItem="A3p-2M-EWE" secondAttribute="bottom" constant="8" id="0JL-jd-KXs"/>
+                            <constraint firstItem="EYR-ad-2EG" firstAttribute="centerX" secondItem="A3p-2M-EWE" secondAttribute="centerX" id="JAT-Ia-kYv"/>
+                            <constraint firstItem="MaA-39-xOi" firstAttribute="leading" secondItem="hBk-96-WMb" secondAttribute="leading" constant="15" id="Qfw-Je-y5j"/>
+                            <constraint firstItem="A3p-2M-EWE" firstAttribute="centerX" secondItem="hBk-96-WMb" secondAttribute="centerX" id="cQf-3b-yNg"/>
+                            <constraint firstItem="A3p-2M-EWE" firstAttribute="centerY" secondItem="hBk-96-WMb" secondAttribute="centerY" id="ks7-NG-xrB"/>
+                            <constraint firstItem="MaA-39-xOi" firstAttribute="top" secondItem="hBk-96-WMb" secondAttribute="top" id="xoz-y6-I07"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hBk-96-WMb"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rGn-fZ-ha3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1321" y="-708"/>
+        </scene>
+        <!--Test View Controller-->
+        <scene sceneID="AIu-0P-8KY">
+            <objects>
+                <viewController storyboardIdentifier="testVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fIn-7Q-MVA" customClass="TestViewController" customModule="CustomSidebar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t5W-PX-YVo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPb-1C-Mpi">
+                                <rect key="frame" x="16" y="20" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="BtnActionBack:" destination="fIn-7Q-MVA" eventType="touchUpInside" id="5T9-Ml-DmI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fPb-1C-Mpi" firstAttribute="top" secondItem="jFV-IB-nYy" secondAttribute="top" id="5DY-cQ-vpR"/>
+                            <constraint firstItem="fPb-1C-Mpi" firstAttribute="leading" secondItem="jFV-IB-nYy" secondAttribute="leading" constant="16" id="OIO-cU-UCT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jFV-IB-nYy"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QYd-ne-QDa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2914" y="218"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="mainVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="CustomSidebar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fw-1v-jU7">
+                                <rect key="frame" x="16" y="20" width="30" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="jin-iL-h9J"/>
+                                    <constraint firstAttribute="height" constant="30" id="qXJ-yK-VyH"/>
+                                </constraints>
+                                <state key="normal" image="menu">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="BtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pKP-VV-k5X"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to home vc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uj9-l4-4FB">
+                                <rect key="frame" x="107" y="333" width="161" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.0039215686269999999" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0fw-1v-jU7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0Q4-Ht-KXn"/>
+                            <constraint firstItem="0fw-1v-jU7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="LQD-G9-FEn"/>
+                            <constraint firstItem="Uj9-l4-4FB" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="NYR-kR-YNi"/>
+                            <constraint firstItem="Uj9-l4-4FB" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="kgU-Ol-P5M"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZOF-O8-Jai"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1072.8" y="130.88455772113943"/>
+        </scene>
+        <!--Chat View Controller-->
+        <scene sceneID="Ffa-YG-6cR">
+            <objects>
+                <viewController storyboardIdentifier="chatVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CDR-RD-Fgd" customClass="ChatViewController" customModule="CustomSidebar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qKX-Kg-ds0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKv-hk-ZsP">
+                                <rect key="frame" x="15" y="20" width="30" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="YA0-13-Han"/>
+                                    <constraint firstAttribute="width" constant="30" id="xhW-5P-Bbc"/>
+                                </constraints>
+                                <state key="normal" image="menu">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="BtnAction:" destination="CDR-RD-Fgd" eventType="touchUpInside" id="dZa-J7-QGw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to chat vc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n1J-iS-Fvk">
+                                <rect key="frame" x="112" y="333" width="151" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98431372549999996" green="0.50980392159999999" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pKv-hk-ZsP" firstAttribute="leading" secondItem="GdN-Os-ehw" secondAttribute="leading" constant="15" id="Azh-yp-mGN"/>
+                            <constraint firstItem="n1J-iS-Fvk" firstAttribute="centerX" secondItem="GdN-Os-ehw" secondAttribute="centerX" id="I21-P4-WwB"/>
+                            <constraint firstItem="n1J-iS-Fvk" firstAttribute="centerY" secondItem="GdN-Os-ehw" secondAttribute="centerY" id="kag-0T-RT8"/>
+                            <constraint firstItem="pKv-hk-ZsP" firstAttribute="top" secondItem="GdN-Os-ehw" secondAttribute="top" id="npv-vg-fxW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GdN-Os-ehw"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vmC-dr-Meb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1775" y="131"/>
+        </scene>
+        <!--Order View Controller-->
+        <scene sceneID="3HK-RP-1gC">
+            <objects>
+                <viewController storyboardIdentifier="orderVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dfT-sO-rVF" customClass="OrderViewController" customModule="CustomSidebar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DrH-9L-B4u">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZK-hZ-qkw">
+                                <rect key="frame" x="15" y="20" width="30" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="BDu-mZ-lKd"/>
+                                    <constraint firstAttribute="height" constant="30" id="GKu-2g-YN6"/>
+                                </constraints>
+                                <state key="normal" image="menu">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="BtnAction:" destination="dfT-sO-rVF" eventType="touchUpInside" id="DCL-bX-3l5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to order vc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GwQ-W9-h5m">
+                                <rect key="frame" x="108" y="333" width="159" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.78039215689999997" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GwQ-W9-h5m" firstAttribute="centerX" secondItem="jdD-zb-DNB" secondAttribute="centerX" id="HhK-dQ-Pke"/>
+                            <constraint firstItem="HZK-hZ-qkw" firstAttribute="leading" secondItem="jdD-zb-DNB" secondAttribute="leading" constant="15" id="Sln-CW-wRx"/>
+                            <constraint firstItem="GwQ-W9-h5m" firstAttribute="centerY" secondItem="jdD-zb-DNB" secondAttribute="centerY" id="eAl-N0-bRI"/>
+                            <constraint firstItem="HZK-hZ-qkw" firstAttribute="top" secondItem="jdD-zb-DNB" secondAttribute="top" id="vT1-qL-R9B"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jdD-zb-DNB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xGB-zP-uwd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1079" y="825"/>
+        </scene>
+        <!--Other View Controller-->
+        <scene sceneID="8AJ-d2-iiT">
+            <objects>
+                <viewController storyboardIdentifier="otherVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pOw-ab-dkr" customClass="OtherViewController" customModule="CustomSidebar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RZy-LC-itB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mc6-S5-HIR">
+                                <rect key="frame" x="15" y="20" width="30" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="723-zx-o0a"/>
+                                    <constraint firstAttribute="width" constant="30" id="Nvd-Dg-RdF"/>
+                                </constraints>
+                                <state key="normal" image="menu">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="BtnAction:" destination="pOw-ab-dkr" eventType="touchUpInside" id="XDb-lT-vkW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to other vc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3w-RY-Bgt">
+                                <rect key="frame" x="108.5" y="333" width="158" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88235294119999996" green="0.63529411759999999" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="mc6-S5-HIR" firstAttribute="leading" secondItem="KVz-ti-s1k" secondAttribute="leading" constant="15" id="Brx-kO-7Zr"/>
+                            <constraint firstItem="f3w-RY-Bgt" firstAttribute="centerY" secondItem="KVz-ti-s1k" secondAttribute="centerY" id="Yma-o9-ZfO"/>
+                            <constraint firstItem="mc6-S5-HIR" firstAttribute="top" secondItem="KVz-ti-s1k" secondAttribute="top" id="k2z-7V-DLb"/>
+                            <constraint firstItem="f3w-RY-Bgt" firstAttribute="centerX" secondItem="KVz-ti-s1k" secondAttribute="centerX" id="rJG-0w-PHd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KVz-ti-s1k"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6sh-Ak-RGd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1863" y="815"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="EYq-4d-mX7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="525-HY-0R1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rSU-gS-zsk">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Wyg-tg-m3a"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ucg-s1-YFj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="130.88455772113943"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="menu" width="25" height="25"/>
+    </resources>
+</document>
